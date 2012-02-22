@@ -1,4 +1,16 @@
 {-# LANGUAGE TypeFamilies, PatternGuards #-}
+-----------------------------------------------------------------------------
+-- |
+-- Module      :  Statistics.Order
+-- Copyright   :  (C) 2012 Edward Kmett,
+-- License     :  BSD-style (see the file LICENSE)
+--
+-- Maintainer  :  Edward Kmett <ekmett@gmail.com>
+-- Stability   :  provisional
+-- Portability :  Haskell 2011 + TypeFamilies
+--
+----------------------------------------------------------------------------
+
 module Statistics.Order
   (
   -- * L-Estimator
