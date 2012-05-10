@@ -21,11 +21,11 @@ module Statistics.Order
   , (@#)
   , breakdown
   -- ** Robust L-Estimators
-  , trimean     -- Tukey's trimean
-  , midhinge    -- average of q1 and q3
-  , iqr         -- interquartile range
-  , iqm         -- interquartile mean
-  , lscale      -- second L-moment
+  , trimean  -- Tukey's trimean
+  , midhinge -- average of q1 and q3
+  , iqr      -- interquartile range
+  , iqm      -- interquartile mean
+  , lscale   -- second L-moment
   -- ** L-Estimator Combinators
   , trimmed
   , winsorized, winsorised
@@ -69,6 +69,9 @@ import qualified Statistics.Distribution as D
 
 -- | L-estimators are linear combinations of order statistics used by 'robust' statistics.
 newtype L r = L { runL :: Int -> IntMap r }
+
+-- TODO: Write code to test if the result of a given L-estimator will be always than or equal 
+-- to the result of another L-estimator at a given sample size.
 
 -- | Calculate the result of applying an L-estimator after sorting list into order statistics
 (@@) :: (Num r, Ord r) => L r -> [r] -> r

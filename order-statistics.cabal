@@ -1,6 +1,6 @@
 name:          order-statistics
 category:      Statistics
-version:       0.1
+version:       0.1.0.2
 license:       BSD3
 cabal-version: >= 1.6
 license-file:  LICENSE
@@ -8,10 +8,12 @@ author:        Edward A. Kmett
 maintainer:    Edward A. Kmett <ekmett@gmail.com>
 stability:     provisional
 homepage:      http://github.com/ekmett/order-statistics/
+bug-reports:   http://github.com/ekmett/order-statistics/issues
 copyright:     Copyright (C) 2012 Edward A. Kmett
 synopsis:      L-Estimators for robust statistics
 description:   L-Estimators for robust statistics
 build-type:    Simple
+extra-source-files: .travis.yml
 
 source-repository head
   type: git
@@ -27,7 +29,7 @@ library
     math-functions >= 0.1.1  && < 0.2,
     vector         >= 0.9.1  && < 0.10,
     vector-space   >= 0.8    && < 0.9,
-    containers     >= 0.3    && < 0.5
+    containers     >= 0.3    && < 0.6
 
   exposed-modules:
     Statistics.Distribution.Beta
