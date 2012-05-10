@@ -13,6 +13,7 @@ copyright:     Copyright (C) 2012 Edward A. Kmett
 synopsis:      L-Estimators for robust statistics
 description:   L-Estimators for robust statistics
 build-type:    Simple
+
 extra-source-files: .travis.yml
 
 source-repository head
